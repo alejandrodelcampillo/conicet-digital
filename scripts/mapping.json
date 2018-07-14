@@ -1,0 +1,1581 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://data.cd.gob.ar/resource/",
+      "prefixes": [
+        {
+          "name": "void",
+          "uri": "http://rdfs.org/ns/void#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "fabio",
+          "uri": "http://purl.org/spar/fabio#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "dblp",
+          "uri": "http://dblp.org/rdf/schema-2017-04-18#"
+        },
+        {
+          "name": "pro",
+          "uri": "http://purl.org/spar/pro/"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "dbr",
+          "uri": "http://dbpedia.org/resource/"
+        },
+        {
+          "name": "conicet",
+          "uri": "http://data.cd.gob.ar/resource/"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "dc",
+          "uri": "http://purl.org/dc/elements/1.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "dc.identifier.uri",
+          "rdfTypes": [
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#Publication",
+              "curie": "dblp:Publication"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/elements/1.1/title",
+              "curie": "dc:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "dc.title"
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#publishedInJournal",
+              "curie": "dblp:publishedInJournal",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"journal/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.journal.title",
+                "rdfTypes": [
+                  {
+                    "uri": "http://purl.org/spar/fabio#JournalArticle",
+                    "curie": "fabio:JournalArticle"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "lang": "en",
+                      "columnName": "dc.journal.title"
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "journal.reconcil",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  },
+                  {
+                    "uri": "http://dbpedia.org/ontology/country",
+                    "curie": "dbo:country",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"country/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.journal.pais",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://dbpedia.org/ontology/country",
+                          "curie": "dbo:country"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                          "curie": "owl:sameAs",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "\"https://www.wikidata.org/wiki/\"+cell.recon.match.id",
+                            "isRowNumberCell": false,
+                            "columnName": "dc.journal.pais"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#isbn",
+              "curie": "dblp:isbn",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.identifier.issn"
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#publicationType",
+              "curie": "dblp:publicationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.type"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/publisher",
+              "curie": "dc:publisher",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.publisher"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/rights",
+              "curie": "dc:rights",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dc.rights.uri",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+                    "curie": "rdfs:Resource"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.rights"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/date",
+              "curie": "dc:date",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#datetime",
+                "columnName": "dc.date.available"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/language",
+              "curie": "dc:language",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.language.iso"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/subject",
+              "curie": "dc:subject",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/subject",
+              "curie": "dc:subject",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject2"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/subject",
+              "curie": "dc:subject",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject3"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/subject",
+              "curie": "dc:subject",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject4"
+              }
+            },
+            {
+              "uri": "http://purl.org/spar/fabio#Abstract",
+              "curie": "fabio:Abstract",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "dc.description.abstract"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/identifier",
+              "curie": "dc:identifier",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dc.relation.alternativeid2",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+                    "curie": "rdfs:Resource"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "\"https://orcid.org/\"+cell.recon.match.id",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.contributor.author"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author2",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author2"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author2"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil2",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil2"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "\"https://orcid.org/\"+cell.recon.match.id",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.contributor.author2"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author3",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author3"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author3"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil3",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil3"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "\"https://orcid.org/\"+cell.recon.match.id",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.contributor.author3"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author4",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author4"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author4"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil4",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil4"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "\"https://orcid.org/\"+cell.recon.match.id",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.contributor.author4"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author5",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author5"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author5"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil5",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil5"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "\"https://orcid.org/\"+cell.recon.match.id",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.contributor.author5"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author6",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author6"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author6"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil6",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil6"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author7",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author7"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author7"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil7",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil7"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "author-rec-7",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author8",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author8"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author8"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil8",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil8"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author9",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author9"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author9"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil9",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil9"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author10",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author10"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author10"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil10",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil10"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author11",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author11"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author11"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil11",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil11"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author12",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author12"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author12"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil12",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil12"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author13",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author13"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author13"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil13",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil13"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author14",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author14"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author14"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil14",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil14"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "author-rec-14",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#authoredBy",
+              "curie": "dblp:authoredBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"person/\"+value.urlify()",
+                "isRowNumberCell": false,
+                "columnName": "dc.contributor.author15",
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author15"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "dc.contributor.author15"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/spar/pro/relatesToOrganization",
+                    "curie": "pro:relatesToOrganization",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"organization/\"+value.urlify()",
+                      "isRowNumberCell": false,
+                      "columnName": "dc.description.fil15",
+                      "rdfTypes": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/Organization",
+                          "curie": "foaf:Organization"
+                        }
+                      ],
+                      "links": [
+                        {
+                          "uri": "http://xmlns.com/foaf/0.1/name",
+                          "curie": "foaf:name",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "expression": "value",
+                            "isRowNumberCell": false,
+                            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                            "columnName": "dc.description.fil15"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/isPartOf",
+              "curie": "dc:isPartOf",
+              "target": {
+                "nodeType": "resource",
+                "value": "dataset/conicet-digital",
+                "rdfTypes": [
+                  {
+                    "uri": "http://rdfs.org/ns/void#dataset",
+                    "curie": "void:dataset"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "CONICET-DIGITAL-LOD",
+                      "lang": "en"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/elements/1.1/title",
+                    "curie": "dc:title",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "CONICET-DIGITAL-LOD"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/elements/1.1/description",
+                    "curie": "dc:description",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "Linked Open Data version of CONICET-DIGITAL respository"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/elements/1.1/source",
+                    "curie": "dc:source",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "http://ri.conicet.gov.ar/"
+                    }
+                  },
+                  {
+                    "uri": "http://purl.org/dc/elements/1.1/date",
+                    "curie": "dc:date",
+                    "target": {
+                      "nodeType": "literal",
+                      "value": "2018-07-01",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#date"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/topic",
+              "curie": "foaf:topic",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject.classification"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/topic",
+              "curie": "foaf:topic",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject.classification2"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/topic",
+              "curie": "foaf:topic",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject.classification3"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/topic",
+              "curie": "foaf:topic",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject.classification4"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/topic",
+              "curie": "foaf:topic",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject.classification5"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/topic",
+              "curie": "foaf:topic",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.subject.classification6"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/elements/1.1/format",
+              "curie": "dc:format",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.format"
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#publishedInJournalVolume",
+              "curie": "dblp:publishedInJournalVolume",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#integer",
+                "columnName": "dc.journal.volume"
+              }
+            },
+            {
+              "uri": "http://dblp.org/rdf/schema-2017-04-18#pageNumbers",
+              "curie": "dblp:pageNumbers",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "dc.journal.pagination"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
