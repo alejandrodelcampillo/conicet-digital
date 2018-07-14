@@ -1,0 +1,1190 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fabio: <http://purl.org/spar/fabio#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dblp: <http://dblp.org/rdf/schema-2017-04-18#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix conicet: <http://data.cd.gob.ar/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+<http://hdl.handle.net/11336/35255> a dblp:Publication ;
+	dc:title "Estimate of the Anesthesia Stage in Southern Elephant Seals using WEKA Data Mining Tool"@en .
+
+<http://data.cd.gob.ar/resource/journal/international-journal-of-applied-information-systems> a fabio:JournalArticle ;
+	rdfs:label "International Journal of Applied Information Systems"@en .
+
+<http://data.cd.gob.ar/resource/country/estados-unidos> a dbo:country ;
+	owl:sameAs "https://www.wikidata.org/wiki/Q30" .
+
+<http://data.cd.gob.ar/resource/journal/international-journal-of-applied-information-systems> dbo:country <http://data.cd.gob.ar/resource/country/estados-unidos> .
+
+<http://hdl.handle.net/11336/35255> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/international-journal-of-applied-information-systems> ;
+	dblp:isbn "2249-0868"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Foundation of Computer Science"^^xsd:string .
+
+<https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> a rdfs:Resource ;
+	rdfs:label "info:eu-repo/semantics/restrictedAccess"^^xsd:string .
+
+<http://hdl.handle.net/11336/35255> dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Wed Jan 31 19:31:15 ART 2018"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "MACHINE LEARNING"^^xsd:string , "WEKA"^^xsd:string , "ANESTHESIA"^^xsd:string , "MIROUNGA LEONINA"^^xsd:string ;
+	fabio:Abstract "Prediction syst ems are techniques that build and study new forecasts through a branch of the artificial intelligence called Machine Lea rning. In this work it is estimate the time that remains anesthetized a southern elephant seal to which you have applied a combination of d rugs (Zoletil®), the fundamental objective of anesthesia is to avoid risky situations to researchers studying this species. To know these times, data mining techniques and classification algorithms are used, particularly algorithms it were compared J48, SM O, Random Tree, NB Tree y Naïve Bayes with data mining tool WEKA and a data set containing the records of 96 individuals undergoing anesthesia procedure. It is concluded that after tests (Random Tree) was the classification algorithm that best responded, with an accuracy of 98.79%."@en .
+
+<http://dx.doi.org/10.5120/ijais2016451603> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/35255> dc:identifier <http://dx.doi.org/10.5120/ijais2016451603> .
+
+<http://data.cd.gob.ar/resource/person/zrate-marcos-daniel> a foaf:Person ;
+	rdfs:label "Zárate, Marcos Daniel"^^xsd:string ;
+	foaf:name "Zárate, Marcos Daniel"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-centro-para-el-estudio-de-sistemas-marinos-argentina> a foaf:Organization ;
+	foaf:name "Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Centro Nacional Patagónico. Centro para el Estudio de Sistemas Marinos; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/zrate-marcos-daniel> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-centro-para-el-estudio-de-sistemas-marinos-argentina> .
+
+<http://hdl.handle.net/11336/35255> dblp:authoredBy <http://data.cd.gob.ar/resource/person/zrate-marcos-daniel> .
+
+<http://data.cd.gob.ar/resource/person/lewis-mirtha-noemi> a foaf:Person ;
+	rdfs:label "Lewis, Mirtha Noemi"^^xsd:string ;
+	foaf:name "Lewis, Mirtha Noemi"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-lewis-mirtha-noemi-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-centro-para-el-estudio-de-sistemas-marinos-argentina> a foaf:Organization ;
+	foaf:name "Fil: Lewis, Mirtha Noemi. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Centro Nacional Patagónico. Centro para el Estudio de Sistemas Marinos; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/lewis-mirtha-noemi> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-lewis-mirtha-noemi-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-centro-para-el-estudio-de-sistemas-marinos-argentina> .
+
+<http://hdl.handle.net/11336/35255> dblp:authoredBy <http://data.cd.gob.ar/resource/person/lewis-mirtha-noemi> .
+
+<http://data.cd.gob.ar/resource/dataset/conicet-digital> a void:dataset ;
+	rdfs:label "CONICET-DIGITAL-LOD"@en ;
+	dc:title "CONICET-DIGITAL-LOD" ;
+	dc:description "Linked Open Data version of CONICET-DIGITAL respository" ;
+	dc:source "http://ri.conicet.gov.ar/" ;
+	dc:date "2018-07-01"^^xsd:date .
+
+<http://hdl.handle.net/11336/35255> dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Ciencias de la Computación"^^xsd:string , "Ciencias de la Computación e Información"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "11"^^xsd:integer ;
+	dblp:pageNumbers "48-52"^^xsd:string .
+
+<http://hdl.handle.net/11336/35235> a dblp:Publication ;
+	dc:title "Demersal and pelagic species of fish and squid from the Patagonian shelf"@en .
+
+<http://data.cd.gob.ar/resource/journal/zookeys> a fabio:JournalArticle ;
+	rdfs:label "ZooKeys"@en ;
+	owl:sameAs <http://www.wikidata.org/entity/Q219980> .
+
+<http://data.cd.gob.ar/resource/country/bulgaria> a dbo:country ;
+	owl:sameAs "https://www.wikidata.org/wiki/Q219" .
+
+<http://data.cd.gob.ar/resource/journal/zookeys> dbo:country <http://data.cd.gob.ar/resource/country/bulgaria> .
+
+<http://hdl.handle.net/11336/35235> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/zookeys> ;
+	dblp:isbn "1313-2989"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Pensoft Publishers"^^xsd:string .
+
+<https://creativecommons.org/licenses/by-nc/2.5/ar/> a rdfs:Resource ;
+	rdfs:label "info:eu-repo/semantics/openAccess"^^xsd:string .
+
+<http://hdl.handle.net/11336/35235> dc:rights <https://creativecommons.org/licenses/by-nc/2.5/ar/> ;
+	dc:date "Wed Jan 31 19:10:03 ART 2018"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "occurrence"^^xsd:string , "Patagonia"^^xsd:string , "teleosts"^^xsd:string , "elasmobranches"^^xsd:string ;
+	fabio:Abstract "The dataset contains 2007 records of occurrence of 39 species of fish and 2 species of squid distributed on the Patagonian continental shelf and slope. This dataset describes a new and revised version of the original data published through OBIS with individual morphometrics. Specimens are representative of pelagic, demersal, demersal-pelagic, demersal-benthic and benthic habits and they were collected by commercial fishing vessels in autumn (May–June, 2001, 51 catches), winter (July–August, 2001, 38 catches) and summer (January-February, 2002, 112 catches). The sampling was carried out with bottom trawls at a depth range of 73–370 m. The survey was located between 39°–52°S and 55°–65°W."@en .
+
+<https://doi.org/10.3897/zookeys.668.11826> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/35235> dc:identifier <https://doi.org/10.3897/zookeys.668.11826> .
+
+<http://data.cd.gob.ar/resource/person/eder-elena-beatriz> a foaf:Person ;
+	rdfs:label "Eder, Elena Beatriz"^^xsd:string ;
+	foaf:name "Eder, Elena Beatriz"^^xsd:string ;
+	pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-centro-para-el-estudio-de-sistemas-marinos-argentina> .
+
+<http://hdl.handle.net/11336/35235> dblp:authoredBy <http://data.cd.gob.ar/resource/person/eder-elena-beatriz> .
+
+<http://data.cd.gob.ar/resource/person/marin-maria-rosa> a foaf:Person ;
+	rdfs:label "Marin, Maria Rosa"^^xsd:string ;
+	foaf:name "Marin, Maria Rosa"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-marin-maria-rosa-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-argentina> a foaf:Organization ;
+	foaf:name "Fil: Marin, Maria Rosa. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Centro Nacional Patagónico; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/marin-maria-rosa> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-marin-maria-rosa-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0001-9448-5376" .
+
+<http://hdl.handle.net/11336/35235> dblp:authoredBy <http://data.cd.gob.ar/resource/person/marin-maria-rosa> , <http://data.cd.gob.ar/resource/person/lewis-mirtha-noemi> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Otras Ciencias Biológicas"^^xsd:string , "Ciencias Biológicas"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "1313-2970"^^xsd:integer ;
+	dblp:pageNumbers "139-145"^^xsd:string .
+
+<http://hdl.handle.net/11336/21471> a dblp:Publication ;
+	dc:title "Free-living marine nematodes from San Julián Bay (Santa Cruz, Argentina)"@en ;
+	dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/zookeys> ;
+	dblp:isbn "1313-2989"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Pensoft Publishers"^^xsd:string .
+
+<https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> rdfs:label "info:eu-repo/semantics/openAccess"^^xsd:string .
+
+<http://hdl.handle.net/11336/21471> dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Thu Jul 27 17:52:27 ART 2017"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "NEMATODA"^^xsd:string , "ENOPLEA"^^xsd:string , "CHROMADOREA"^^xsd:string , "SOUTH ATLANTIC"^^xsd:string ;
+	fabio:Abstract "The free-living marine nematodes of San Julián Bay dataset is based on sediment samples collected in January 2009 during the project PICT AGENCIA-FONCYT 2/33345-2005. A total of 36 samples have been taken at three locations in the San Julián Bay, Santa Cruz Province, Argentina on the coastal littoral at three tidal levels. This presents a unique and important collection for the nematode benthic biodiversity assessment as this area remains one of the least known regions in Patagonia. In total 10,030 specimens of free-living marine nematodes belonging to 2 classes, 9 orders, 35 families, 78 genera and 125 species were collected. The San Julián city site presented a very high species richness."@en .
+
+<https://zookeys.pensoft.net/articles.php?id=4947> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/21471> dc:identifier <https://zookeys.pensoft.net/articles.php?id=4947> .
+
+<http://data.cd.gob.ar/resource/person/pastor-catalina-teresa> a foaf:Person ;
+	rdfs:label "Pastor, Catalina Teresa"^^xsd:string ;
+	foaf:name "Pastor, Catalina Teresa"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> a foaf:Organization ;
+	foaf:name "Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/pastor-catalina-teresa> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> .
+
+<http://hdl.handle.net/11336/21471> dblp:authoredBy <http://data.cd.gob.ar/resource/person/pastor-catalina-teresa> .
+
+<http://data.cd.gob.ar/resource/person/lo-russo-virginia> a foaf:Person ;
+	rdfs:label "Lo Russo, Virginia"^^xsd:string ;
+	foaf:name "Lo Russo, Virginia"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-lo-russo-virginia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> a foaf:Organization ;
+	foaf:name "Fil: Lo Russo, Virginia. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/lo-russo-virginia> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-lo-russo-virginia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0001-8141-2450" .
+
+<http://hdl.handle.net/11336/21471> dblp:authoredBy <http://data.cd.gob.ar/resource/person/lo-russo-virginia> .
+
+<http://data.cd.gob.ar/resource/person/villares-maria-gabriela> a foaf:Person ;
+	rdfs:label "Villares, Maria Gabriela"^^xsd:string ;
+	foaf:name "Villares, Maria Gabriela"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-villares-maria-gabriela-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> a foaf:Organization ;
+	foaf:name "Fil: Villares, Maria Gabriela. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/villares-maria-gabriela> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-villares-maria-gabriela-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> .
+
+<http://hdl.handle.net/11336/21471> dblp:authoredBy <http://data.cd.gob.ar/resource/person/villares-maria-gabriela> .
+
+<http://data.cd.gob.ar/resource/person/milano-viviana> a foaf:Person ;
+	rdfs:label "Milano, Viviana"^^xsd:string ;
+	foaf:name "Milano, Viviana"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-milano-viviana-universidad-nacional-de-la-patagonia-argentina> a foaf:Organization ;
+	foaf:name "Fil: Milano, Viviana. Universidad Nacional de la Patagonia; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/milano-viviana> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-milano-viviana-universidad-nacional-de-la-patagonia-argentina> .
+
+<http://hdl.handle.net/11336/21471> dblp:authoredBy <http://data.cd.gob.ar/resource/person/milano-viviana> .
+
+<http://data.cd.gob.ar/resource/person/miyashiro-lidia> a foaf:Person ;
+	rdfs:label "Miyashiro, Lidia"^^xsd:string ;
+	foaf:name "Miyashiro, Lidia"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-miyashiro-lidia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> a foaf:Organization ;
+	foaf:name "Fil: Miyashiro, Lidia. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/miyashiro-lidia> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-miyashiro-lidia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> .
+
+<http://hdl.handle.net/11336/21471> dblp:authoredBy <http://data.cd.gob.ar/resource/person/miyashiro-lidia> .
+
+<http://data.cd.gob.ar/resource/person/mazzanti-renato> a foaf:Person ;
+	rdfs:label "Mazzanti, Renato"^^xsd:string ;
+	foaf:name "Mazzanti, Renato"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-mazzanti-renato-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> a foaf:Organization ;
+	foaf:name "Fil: Mazzanti, Renato. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/mazzanti-renato> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-mazzanti-renato-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> .
+
+<http://hdl.handle.net/11336/21471> dblp:authoredBy <http://data.cd.gob.ar/resource/person/mazzanti-renato> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Conservación de la Biodiversidad"^^xsd:string , "Ciencias Biológicas"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "1313-2970"^^xsd:integer ;
+	dblp:pageNumbers "133-144"^^xsd:string .
+
+<http://hdl.handle.net/11336/10911> a dblp:Publication ;
+	dc:title "Analysis and Design of Photobioreactors for Microalgae Production II: Experimental Validation of a Radiation Field Simulator Based on a Monte Carlo Algorithm"@en .
+
+<http://data.cd.gob.ar/resource/journal/photochemistry-and-photobiology> a fabio:JournalArticle ;
+	rdfs:label "Photochemistry And Photobiology"@en ;
+	owl:sameAs dbr:Photochemistry_and_Photobiology .
+
+<http://data.cd.gob.ar/resource/country/reino-unido> a dbo:country ;
+	owl:sameAs "https://www.wikidata.org/wiki/Q145" .
+
+<http://data.cd.gob.ar/resource/journal/photochemistry-and-photobiology> dbo:country <http://data.cd.gob.ar/resource/country/reino-unido> .
+
+<http://hdl.handle.net/11336/10911> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/photochemistry-and-photobiology> ;
+	dblp:isbn "0031-8655"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Wiley"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Fri Jan 06 16:58:24 ART 2017"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "MICROALGAE"^^xsd:string , "PHOTOBIOREACTOR"^^xsd:string , "MONTE CARLO"^^xsd:string ;
+	fabio:Abstract "In previous study, we developed a methodology to assess the intrinsic optical properties governing the radiation field in algae suspensions. With these properties at our disposal, a Monte Carlo simulation program is developed and used in this study as a predictive autonomous program applied to the simulation of experiments that reproduce the common illumination conditions that are found in processes of large scale production of microalgae, especially when using open ponds such as raceway ponds. The simulation module is validated by comparing the results of experimental measurements made on artificially illuminated algal suspension with those predicted by the Monte Carlo program. This experiment deals with a situation, which resembles that of an open pond or that of a raceway pond, except for the fact that for convenience, the experimental arrangement appears as if those reactors were turned upside down. It serves the purpose of assessing as to what extent the scattering phenomena are important for the prediction of the spatial distribution of the radiant energy density. The simulation module developed can be applied to compute the local energy density inside Photobioreactors with the goal to optimize its design and their operating conditions"@en .
+
+<http://onlinelibrary.wiley.com/doi/10.1111/j.1751-1097.2012.01149.x/abstract> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/10911> dc:identifier <http://onlinelibrary.wiley.com/doi/10.1111/j.1751-1097.2012.01149.x/abstract> .
+
+<http://data.cd.gob.ar/resource/person/heinrich-josu-miguel> a foaf:Person ;
+	rdfs:label "Heinrich, Josué Miguel"^^xsd:string ;
+	foaf:name "Heinrich, Josué Miguel"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> a foaf:Organization ;
+	foaf:name "Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Santa Fe. Instituto de Desarrollo Tecnológico Para la Industria Química (i); Argentina. Universidad Nacional del Litoral; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/heinrich-josu-miguel> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> .
+
+<http://hdl.handle.net/11336/10911> dblp:authoredBy <http://data.cd.gob.ar/resource/person/heinrich-josu-miguel> .
+
+<http://data.cd.gob.ar/resource/person/niizawa-ignacio> a foaf:Person ;
+	rdfs:label "Niizawa, Ignacio"^^xsd:string ;
+	foaf:name "Niizawa, Ignacio"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-niizawa-ignacio-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> a foaf:Organization ;
+	foaf:name "Fil: Niizawa, Ignacio. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Santa Fe. Instituto de Desarrollo Tecnológico para la Industria Química (i); Argentina. Universidad Nacional del Litoral; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/niizawa-ignacio> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-niizawa-ignacio-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0002-4920-9855" .
+
+<http://hdl.handle.net/11336/10911> dblp:authoredBy <http://data.cd.gob.ar/resource/person/niizawa-ignacio> .
+
+<http://data.cd.gob.ar/resource/person/botta-fausto-adrin> a foaf:Person ;
+	rdfs:label "Botta, Fausto Adrián"^^xsd:string ;
+	foaf:name "Botta, Fausto Adrián"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-botta-fausto-adrin-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> a foaf:Organization ;
+	foaf:name "Fil: Botta, Fausto Adrián. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Santa Fe. Instituto de Desarrollo Tecnológico para la Industria Química (i); Argentina. Universidad Nacional del Litoral; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/botta-fausto-adrin> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-botta-fausto-adrin-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> .
+
+<http://hdl.handle.net/11336/10911> dblp:authoredBy <http://data.cd.gob.ar/resource/person/botta-fausto-adrin> .
+
+<http://data.cd.gob.ar/resource/person/trombert-alejandro-raul> a foaf:Person ;
+	rdfs:label "Trombert, Alejandro Raul"^^xsd:string ;
+	foaf:name "Trombert, Alejandro Raul"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-trombert-alejandro-raul-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> a foaf:Organization ;
+	foaf:name "Fil: Trombert, Alejandro Raul. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Santa Fe. Instituto de Desarrollo Tecnológico Para la Industria Química (i); Argentina. Universidad Nacional del Litoral; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/trombert-alejandro-raul> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-trombert-alejandro-raul-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> .
+
+<http://hdl.handle.net/11336/10911> dblp:authoredBy <http://data.cd.gob.ar/resource/person/trombert-alejandro-raul> .
+
+<http://data.cd.gob.ar/resource/person/irazoqui-horacio-antonio> a foaf:Person ;
+	rdfs:label "Irazoqui, Horacio Antonio"^^xsd:string ;
+	foaf:name "Irazoqui, Horacio Antonio"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-irazoqui-horacio-antonio-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> a foaf:Organization ;
+	foaf:name "Fil: Irazoqui, Horacio Antonio. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Santa Fe. Instituto de Desarrollo Tecnológico Para la Industria Química (i); Argentina. Universidad Nacional del Litoral; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/irazoqui-horacio-antonio> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-irazoqui-horacio-antonio-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-santa-fe-instituto-de-desarrollo-tecnolgico-para-la-industria-qumica-i-argentina-universidad-nacional-del-litoral-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0002-8007-627X" .
+
+<http://hdl.handle.net/11336/10911> dblp:authoredBy <http://data.cd.gob.ar/resource/person/irazoqui-horacio-antonio> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Otras Ingenierías y Tecnologías"^^xsd:string , "INGENIERÍAS Y TECNOLOGÍAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "88"^^xsd:integer ;
+	dblp:pageNumbers "952-960"^^xsd:string .
+
+<http://hdl.handle.net/11336/24486> a dblp:Publication ;
+	dc:title "Abstracting and structuring web contents for supporting personal web experiences"@en .
+
+<http://data.cd.gob.ar/resource/journal/lecture-notes-in-computer-science> a fabio:JournalArticle ;
+	rdfs:label "Lecture Notes in Computer Science"@en ;
+	owl:sameAs <http://www.wikidata.org/entity/Q53953519> .
+
+<http://data.cd.gob.ar/resource/country/alemania> a dbo:country ;
+	owl:sameAs "https://www.wikidata.org/wiki/Q183" .
+
+<http://data.cd.gob.ar/resource/journal/lecture-notes-in-computer-science> dbo:country <http://data.cd.gob.ar/resource/country/alemania> .
+
+<http://hdl.handle.net/11336/24486> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/lecture-notes-in-computer-science> ;
+	dblp:isbn "0302-9743"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Springer Verlag Berlín"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Mon Sep 18 19:22:11 ART 2017"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "MASHUPS"^^xsd:string , "PERSONAL WEB"^^xsd:string , "WEB AUGMENTATION"^^xsd:string ;
+	fabio:Abstract "This paper presents a novel approach for supporting abstraction and structuring mechanisms of Web contents. The goal of this approach is to enable users to create/extract Web contents in the form of objects that they can manipulate to create Personal Web experiences. We present an architecture that not only allows the user interaction with individual objects but also supports the integration of many objects found in diverse Web sites. We claim that once Web contents have been organized as objects it is possible to create many types of Personal Web interactions. The approach involves end-users and developers and it is fully supported by dedicated tools. We show how end-users can use our tools to identify contents and transform them into objects stored in our platform. We show how developers can use of objects to create Personal Web applications."@en .
+
+<https://link.springer.com/chapter/10.1007/978-3-319-38791-8_5> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/24486> dc:identifier <https://link.springer.com/chapter/10.1007/978-3-319-38791-8_5> .
+
+<http://data.cd.gob.ar/resource/person/firmenich-sergio-damian> a foaf:Person ;
+	rdfs:label "Firmenich, Sergio Damian"^^xsd:string ;
+	foaf:name "Firmenich, Sergio Damian"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> a foaf:Organization ;
+	foaf:name "Universidad Nacional de la Plata. Facultad de Informática. Laboratorio de Investigación y Formación en Informática Avanzada; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/firmenich-sergio-damian> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0001-9502-2189" .
+
+<http://hdl.handle.net/11336/24486> dblp:authoredBy <http://data.cd.gob.ar/resource/person/firmenich-sergio-damian> .
+
+<http://data.cd.gob.ar/resource/person/bosetti-gabriela-alejandra> a foaf:Person ;
+	rdfs:label "Bosetti, Gabriela Alejandra"^^xsd:string ;
+	foaf:name "Bosetti, Gabriela Alejandra"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-bosetti-gabriela-alejandra-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> a foaf:Organization ;
+	foaf:name "Fil: Bosetti, Gabriela Alejandra. Universidad Nacional de la Plata. Facultad de Informática. Laboratorio de Investigación y Formación en Informática Avanzada; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/bosetti-gabriela-alejandra> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-bosetti-gabriela-alejandra-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0002-3968-6738" .
+
+<http://hdl.handle.net/11336/24486> dblp:authoredBy <http://data.cd.gob.ar/resource/person/bosetti-gabriela-alejandra> .
+
+<http://data.cd.gob.ar/resource/person/rossi-gustavo-hctor> a foaf:Person ;
+	rdfs:label "Rossi, Gustavo Héctor"^^xsd:string ;
+	foaf:name "Rossi, Gustavo Héctor"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-rossi-gustavo-hctor-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> a foaf:Organization ;
+	foaf:name "Fil: Rossi, Gustavo Héctor. Universidad Nacional de la Plata. Facultad de Informática. Laboratorio de Investigación y Formación en Informática Avanzada; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/rossi-gustavo-hctor> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-rossi-gustavo-hctor-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> .
+
+<http://hdl.handle.net/11336/24486> dblp:authoredBy <http://data.cd.gob.ar/resource/person/rossi-gustavo-hctor> .
+
+<http://data.cd.gob.ar/resource/person/winckler-marco> a foaf:Person ;
+	rdfs:label "Winckler, Marco"^^xsd:string ;
+	foaf:name "Winckler, Marco"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-winckler-marco-university-of-toulouse-3-francia> a foaf:Organization ;
+	foaf:name "Fil: Winckler, Marco. University of Toulouse 3; Francia"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/winckler-marco> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-winckler-marco-university-of-toulouse-3-francia> ;
+	owl:sameAs "https://orcid.org/0000-0002-0756-6934" .
+
+<http://hdl.handle.net/11336/24486> dblp:authoredBy <http://data.cd.gob.ar/resource/person/winckler-marco> .
+
+<http://data.cd.gob.ar/resource/person/barbieri-tomas> a foaf:Person ;
+	rdfs:label "Barbieri, Tomas"^^xsd:string ;
+	foaf:name "Barbieri, Tomas"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-barbieri-tomas-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> a foaf:Organization ;
+	foaf:name "Fil: Barbieri, Tomas. Universidad Nacional de la Plata. Facultad de Informática. Laboratorio de Investigación y Formación en Informática Avanzada; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/barbieri-tomas> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-barbieri-tomas-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> .
+
+<http://hdl.handle.net/11336/24486> dblp:authoredBy <http://data.cd.gob.ar/resource/person/barbieri-tomas> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Otras Ciencias de la Computación e Información"^^xsd:string , "Ciencias de la Computación e Información"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "9671"^^xsd:integer ;
+	dblp:pageNumbers "77-95"^^xsd:string .
+
+<http://hdl.handle.net/11336/33299> a dblp:Publication ;
+	dc:title "Business Processes Refactoring to Improve Usability in E-Commerce Applications"@en .
+
+<http://data.cd.gob.ar/resource/journal/electronic-commerce-research> a fabio:JournalArticle ;
+	rdfs:label "Electronic Commerce Research"@en ;
+	owl:sameAs <http://www.wikidata.org/entity/Q15753695> .
+
+<http://data.cd.gob.ar/resource/country/armenia> a dbo:country ;
+	owl:sameAs "https://www.wikidata.org/wiki/Q399" .
+
+<http://data.cd.gob.ar/resource/journal/electronic-commerce-research> dbo:country <http://data.cd.gob.ar/resource/country/armenia> .
+
+<http://hdl.handle.net/11336/33299> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/electronic-commerce-research> ;
+	dblp:isbn "1389-5753"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Springer"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Mon Jan 15 18:51:16 ART 2018"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "E-commerce websites"^^xsd:string , "Business processes"^^xsd:string , "Business Web applications"^^xsd:string , "Quality-in-use"^^xsd:string ;
+	fabio:Abstract "Refactoring is a technique that applies step-by-step transformations intended to improve the quality of softwarewhile preserving its behavior.It represents an essential activity in today ́s software lifecycle and a powerful tool against software decay. Software decay, however, is not only about code becoming legacy, but it is also about systems becoming less usablecompared to competitor solutions adoptingnewdesignsand newtechnologies. If we narrow the focus on e-commerce systems, the role of usability becomes essential: higher usability is in fact a requirement to win the market competition and to retain customers from turning to other choices. One reason why ane-commerceapplicationcan start suffering frompoorusabilityis because of itsbusiness processes becoming difficult to access, complicatedto execute, and, overall, offering a poor user experience. In this paper we arguethat refactoring can beakey solutionforthis kind of usabilityissues. In particular, we propose a catalog of refactorings as a means to systematically identify and address lack of usability in the business processes of an e-commerce application,and to seize opportunities for usability improvement. To make the presentation concrete and to provide evidence of the benefits that applying our refactorings can bring,wepresenta number of exampleswith reference towell-knowne-commerce websites."@en .
+
+<http://data.cd.gob.ar/resource/person/distante-damiano> a foaf:Person ;
+	rdfs:label "Distante, Damiano"^^xsd:string ;
+	foaf:name "Distante, Damiano"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/instituto-de-investigaciones-universitarias-roma-la-sapienza-italia> a foaf:Organization ;
+	foaf:name "Instituto de Investigaciones Universitarias Roma la Sapienza; Italia"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/distante-damiano> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/instituto-de-investigaciones-universitarias-roma-la-sapienza-italia> ;
+	owl:sameAs "https://orcid.org/0000-0002-8467-535X" .
+
+<http://hdl.handle.net/11336/33299> dblp:authoredBy <http://data.cd.gob.ar/resource/person/distante-damiano> .
+
+<http://data.cd.gob.ar/resource/person/garrido-alejandra> a foaf:Person ;
+	rdfs:label "Garrido, Alejandra"^^xsd:string ;
+	foaf:name "Garrido, Alejandra"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-garrido-alejandra-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> a foaf:Organization ;
+	foaf:name "Fil: Garrido, Alejandra. Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina. Universidad Nacional de la Plata. Facultad de Informática. Laboratorio de Investigación y Formación en Informática Avanzada; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/garrido-alejandra> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-garrido-alejandra-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0002-5052-705X" .
+
+<http://hdl.handle.net/11336/33299> dblp:authoredBy <http://data.cd.gob.ar/resource/person/garrido-alejandra> .
+
+<http://data.cd.gob.ar/resource/person/camelier-carvajal-julia> a foaf:Person ;
+	rdfs:label "Camelier Carvajal, Julia"^^xsd:string ;
+	foaf:name "Camelier Carvajal, Julia"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-camelier-carvajal-julia-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> a foaf:Organization ;
+	foaf:name "Fil: Camelier Carvajal, Julia. Universidad Nacional de la Plata. Facultad de Informática. Laboratorio de Investigación y Formación en Informática Avanzada; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/camelier-carvajal-julia> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-camelier-carvajal-julia-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> .
+
+<http://hdl.handle.net/11336/33299> dblp:authoredBy <http://data.cd.gob.ar/resource/person/camelier-carvajal-julia> .
+
+<http://data.cd.gob.ar/resource/person/giandini-roxana-silvia> a foaf:Person ;
+	rdfs:label "Giandini, Roxana Silvia"^^xsd:string ;
+	foaf:name "Giandini, Roxana Silvia"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-giandini-roxana-silvia-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> a foaf:Organization ;
+	foaf:name "Fil: Giandini, Roxana Silvia. Universidad Nacional de la Plata. Facultad de Informática. Laboratorio de Investigación y Formación en Informática Avanzada; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/giandini-roxana-silvia> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-giandini-roxana-silvia-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> .
+
+<http://hdl.handle.net/11336/33299> dblp:authoredBy <http://data.cd.gob.ar/resource/person/giandini-roxana-silvia> .
+
+<http://data.cd.gob.ar/resource/organization/fil-rossi-gustavo-hctor-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> a foaf:Organization ;
+	foaf:name "Fil: Rossi, Gustavo Héctor. Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina. Universidad Nacional de la Plata. Facultad de Informática. Laboratorio de Investigación y Formación en Informática Avanzada; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/rossi-gustavo-hctor> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-rossi-gustavo-hctor-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina-universidad-nacional-de-la-plata-facultad-de-informtica-laboratorio-de-investigacin-y-formacin-en-informtica-avanzada-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0002-7990-6977" .
+
+<http://hdl.handle.net/11336/33299> dblp:authoredBy <http://data.cd.gob.ar/resource/person/rossi-gustavo-hctor> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Ciencias de la Computación"^^xsd:string , "Ciencias de la Computación e Información"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "14"^^xsd:integer ;
+	dblp:pageNumbers "497-529"^^xsd:string .
+
+<http://hdl.handle.net/11336/1609> a dblp:Publication ;
+	dc:title "A Tenebrionid beetle's dataset (Coleoptera, Tenebrionidae) from Peninsula Valdés (Chubut, Argentina)"@en ;
+	dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/zookeys> ;
+	dblp:isbn "1313-2989"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Pensoft Publishers"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Tue Aug 11 19:18:55 ART 2015"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "DATA PAPER"^^xsd:string , "TENEBRIONID"^^xsd:string , "DATASET"^^xsd:string , "PATAGONIA"^^xsd:string ;
+	fabio:Abstract "The Natural Protected Area Peninsula Valdés, located in Northeastern Patagonia, is one of the largest conservation units of arid lands in Argentina. Although this area has been in the UNESCO World Heritage List since 1999, it has been continually exposed to sheep grazing and cattle farming for more than a century which have had a negative impact on the local environment. Our aim is to describe the first dataset of tenebrionid beetle species living in Peninsula Valdés and their relationship to sheep grazing. The dataset contains 118 records on 11 species and 198 adult individuals collected. Beetles were collected using pitfall traps in the two major environmental units of Peninsula Valdés, taking into account grazing intensities over a three year time frame from 2005-2007. The Data quality was enhanced following the best practices suggested in the literature during the digitalization and geo-referencing processes. Moreover, identification of specimens and current accurate spelling of scientific names were reviewed. Finally, post-validation processes using DarwinTest software were applied. Specimens have been deposited at Entomological Collection of the Centro Nacional Patagónico (CENPAT-CONICET). The dataset is part of the database of this collection and has been published on the internet through GBIF Integrated Publishing Toolkit (IPT) (http://data.gbif.org/datasets/resource/14669/). Furthermore, it is the first dataset for tenebrionid beetles of arid Patagonia available in GBIF database, and it is the first one based on a previously designed and standardized sampling to assess the interaction between these beetles and grazing in the area. The main purposes of this dataset are to ensure accessibility to data associated with Tenebrionidae specimens from Peninsula Valdés (Chubut, Argentina), also to contribute to GBIF with primary data about Patagonian tenebrionids and finally, to promote the Entomological Collection of Centro Nacional Patagónico (CENPAT-CONICET) and its associated biodiversity data. For these reasons, we believe that this information will certainly be useful for future faunistic, ecological, conservational and biogeographical studies."@en .
+
+<http://www.pensoft.net/journals/zookeys/article/4761/abstract/a-tenebrionid-beetle%E2%80%99s-dataset-coleoptera-tenebrionidae-from-peninsula-vald%C3%A9s-chubut-%C2%A0argentina-> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/1609> dc:identifier <http://www.pensoft.net/journals/zookeys/article/4761/abstract/a-tenebrionid-beetle%E2%80%99s-dataset-coleoptera-tenebrionidae-from-peninsula-vald%C3%A9s-chubut-%C2%A0argentina-> .
+
+<http://data.cd.gob.ar/resource/person/cheli-german-horacio> a foaf:Person ;
+	rdfs:label "Cheli, German Horacio"^^xsd:string ;
+	foaf:name "Cheli, German Horacio"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> a foaf:Organization ;
+	foaf:name "Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina; Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina;"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/cheli-german-horacio> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0001-5858-8255" .
+
+<http://hdl.handle.net/11336/1609> dblp:authoredBy <http://data.cd.gob.ar/resource/person/cheli-german-horacio> .
+
+<http://data.cd.gob.ar/resource/person/flores-gustavo-ernesto> a foaf:Person ;
+	rdfs:label "Flores, Gustavo Ernesto"^^xsd:string ;
+	foaf:name "Flores, Gustavo Ernesto"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-flores-gustavo-ernesto-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-mendoza-instituto-argentino-de-investigaciones-de-zonas-aridas-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-mendoza-instituto-argentino-de-investigaciones-de-zonas-aridas-laboratorio-de-entomologa-argentina> a foaf:Organization ;
+	foaf:name "Fil: Flores, Gustavo Ernesto. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico - CONICET - Mendoza. Instituto Argentino de Investigaciones de Zonas Aridas; Argentina; Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico - CONICET - Mendoza. Instituto Argentino de Investigaciones de Zonas Aridas. Laboratorio de Entomología; Argentina;"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/flores-gustavo-ernesto> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-flores-gustavo-ernesto-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-mendoza-instituto-argentino-de-investigaciones-de-zonas-aridas-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-mendoza-instituto-argentino-de-investigaciones-de-zonas-aridas-laboratorio-de-entomologa-argentina> .
+
+<http://hdl.handle.net/11336/1609> dblp:authoredBy <http://data.cd.gob.ar/resource/person/flores-gustavo-ernesto> .
+
+<http://data.cd.gob.ar/resource/person/martnez-romn-nicols-rafael> a foaf:Person ;
+	rdfs:label "Martínez Román, Nicolás Rafael"^^xsd:string ;
+	foaf:name "Martínez Román, Nicolás Rafael"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-martnez-romn-nicols-rafael-universidad-nacional-de-la-patagonia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> a foaf:Organization ;
+	foaf:name "Fil: Martínez Román, Nicolás Rafael. Universidad Nacional de la Patagonia; Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina;"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/martnez-romn-nicols-rafael> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-martnez-romn-nicols-rafael-universidad-nacional-de-la-patagonia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0001-6630-1832" .
+
+<http://hdl.handle.net/11336/1609> dblp:authoredBy <http://data.cd.gob.ar/resource/person/martnez-romn-nicols-rafael> .
+
+<http://data.cd.gob.ar/resource/person/podest-daro-hector> a foaf:Person ;
+	rdfs:label "Podestá, Darío Hector"^^xsd:string ;
+	foaf:name "Podestá, Darío Hector"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-podest-daro-hector-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> a foaf:Organization ;
+	foaf:name "Fil: Podestá, Darío Hector. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina; Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina;"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/podest-daro-hector> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-podest-daro-hector-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> .
+
+<http://hdl.handle.net/11336/1609> dblp:authoredBy <http://data.cd.gob.ar/resource/person/podest-daro-hector> .
+
+<http://data.cd.gob.ar/resource/organization/fil-mazzanti-renato-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> a foaf:Organization ;
+	foaf:name "Fil: Mazzanti, Renato. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina; Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina;"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/mazzanti-renato> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-mazzanti-renato-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> .
+
+<http://hdl.handle.net/11336/1609> dblp:authoredBy <http://data.cd.gob.ar/resource/person/mazzanti-renato> .
+
+<http://data.cd.gob.ar/resource/organization/fil-miyashiro-lidia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> foaf:name "Fil: Miyashiro, Lidia. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Nacional Patagónico; Argentina;"^^xsd:string .
+
+<http://hdl.handle.net/11336/1609> dblp:authoredBy <http://data.cd.gob.ar/resource/person/miyashiro-lidia> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Zoología, Ornitología, Entomología, Etología"^^xsd:string , "Ciencias Biológicas"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "364"^^xsd:integer ;
+	dblp:pageNumbers "93-108"^^xsd:string .
+
+<http://hdl.handle.net/11336/17363> a dblp:Publication ;
+	dc:title "Stable isotopes indicate population structuring in the southwest Atlantic population of right whales (Eubalaena australis)"@en .
+
+<http://data.cd.gob.ar/resource/journal/plos-one> a fabio:JournalArticle ;
+	rdfs:label "Plos One"@en ;
+	owl:sameAs <http://www.wikidata.org/entity/Q564954> ;
+	dbo:country <http://data.cd.gob.ar/resource/country/estados-unidos> .
+
+<http://hdl.handle.net/11336/17363> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/plos-one> ;
+	dblp:isbn "1932-6203"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Public Library of Science"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Fri Jun 02 15:55:44 ART 2017"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "Eubalaena australis"^^xsd:string , "southern right whale"^^xsd:string , "Southwestern Atlantic"^^xsd:string , "stable isotopes"^^xsd:string ;
+	fabio:Abstract "From the early 17th century to the 1970s southern right whales, Eubalaena australis, were subject to intense exploitation along the Atlantic coast of South America. Catches along this coast recorded by whalers originally formed a continuum from Brazil to Tierra del Fuego. Nevertheless, the recovery of the population has apparently occurred fragmentarily, and with two main areas of concentration, one off southern Brazil (Santa Catarina) and another off central Argentina (Peninsula Valdés). This pattern suggests some level of heterogeneity amongst the population, which is apparently contradicted by records that traced individuals moving throughout the whole geographical extension covered by the species in the Southwest Atlantic. To test the hypothesis of the potential occurrence of discrete subpopulations exploiting specific habitats, we investigated N, C and O isotopic values in 125 bone samples obtained from whaling factories operating in the early 1970s in southern Brazil (n = 72) and from contemporary and more recent strandings occurring in central Argentina (n = 53). Results indicated significant differences between the two sampling areas, being δ13C and δ18O values significantly higher in samples from southern Brazil than in those from central Argentina. This variation was consistent with isotopic baselines from the two areas, indicating the occurrence of some level of structure in the Southwest Atlantic right whale population and equally that whales more likely feed in areas commonly thought to exclusively serve as nursing grounds. Results aim at reconsidering of the units currently used in the management of the southern right whale in the Southwest Atlantic Ocean. In the context of the current die-off affecting the species in Peninsula Valdés, these results also highlight the necessity to better understand movements of individuals and precisely identify their feeding areas."@en .
+
+<http://dx.doi.org/10.1371/journal.pone.0100024> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/17363> dc:identifier <http://dx.doi.org/10.1371/journal.pone.0100024> .
+
+<http://data.cd.gob.ar/resource/person/morgana-vighi> a foaf:Person ;
+	rdfs:label "Morgana, Vighi"^^xsd:string ;
+	foaf:name "Morgana, Vighi"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/universidad-de-barcelona-espaa> a foaf:Organization ;
+	foaf:name "Universidad de Barcelona; España"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/morgana-vighi> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/universidad-de-barcelona-espaa> ;
+	owl:sameAs "https://orcid.org/0000-0003-3422-9041" .
+
+<http://hdl.handle.net/11336/17363> dblp:authoredBy <http://data.cd.gob.ar/resource/person/morgana-vighi> .
+
+<http://data.cd.gob.ar/resource/person/borrell-asuncin> a foaf:Person ;
+	rdfs:label "Borrell, Asunción"^^xsd:string ;
+	foaf:name "Borrell, Asunción"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-borrell-asuncin-universidad-de-barcelona-espaa> a foaf:Organization ;
+	foaf:name "Fil: Borrell, Asunción. Universidad de Barcelona; España"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/borrell-asuncin> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-borrell-asuncin-universidad-de-barcelona-espaa> .
+
+<http://hdl.handle.net/11336/17363> dblp:authoredBy <http://data.cd.gob.ar/resource/person/borrell-asuncin> .
+
+<http://data.cd.gob.ar/resource/person/crespo-enrique-alberto> a foaf:Person ;
+	rdfs:label "Crespo, Enrique Alberto"^^xsd:string ;
+	foaf:name "Crespo, Enrique Alberto"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-crespo-enrique-alberto-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-argentina> a foaf:Organization ;
+	foaf:name "Fil: Crespo, Enrique Alberto. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Centro Nacional Patagónico; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/crespo-enrique-alberto> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-crespo-enrique-alberto-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-argentina> .
+
+<http://hdl.handle.net/11336/17363> dblp:authoredBy <http://data.cd.gob.ar/resource/person/crespo-enrique-alberto> .
+
+<http://data.cd.gob.ar/resource/person/oliveira-larissa-r> a foaf:Person ;
+	rdfs:label "Oliveira, Larissa R."^^xsd:string ;
+	foaf:name "Oliveira, Larissa R."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-oliveira-larissa-r-universidade-vale-do-rio-dos-sinos-brasil-universidade-federal-do-rio-grande-do-sul-brasil> a foaf:Organization ;
+	foaf:name "Fil: Oliveira, Larissa R.. Universidade Vale do Rio dos Sinos; Brasil. Universidade Federal do Rio Grande do Sul; Brasil"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/oliveira-larissa-r> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-oliveira-larissa-r-universidade-vale-do-rio-dos-sinos-brasil-universidade-federal-do-rio-grande-do-sul-brasil> ;
+	owl:sameAs "https://orcid.org/0000-0001-6911-6886" .
+
+<http://hdl.handle.net/11336/17363> dblp:authoredBy <http://data.cd.gob.ar/resource/person/oliveira-larissa-r> .
+
+<http://data.cd.gob.ar/resource/person/simes-lopes-paulo-c> a foaf:Person ;
+	rdfs:label "Simões Lopes, Paulo C."^^xsd:string ;
+	foaf:name "Simões Lopes, Paulo C."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-simes-lopes-paulo-c-universidade-federal-santa-catarina-brasil> a foaf:Organization ;
+	foaf:name "Fil: Simões Lopes, Paulo C.. Universidade Federal Santa Catarina; Brasil"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/simes-lopes-paulo-c> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-simes-lopes-paulo-c-universidade-federal-santa-catarina-brasil> .
+
+<http://hdl.handle.net/11336/17363> dblp:authoredBy <http://data.cd.gob.ar/resource/person/simes-lopes-paulo-c> .
+
+<http://data.cd.gob.ar/resource/person/flores-paulo-a-c> a foaf:Person ;
+	rdfs:label "Flores, Paulo A. C."^^xsd:string ;
+	foaf:name "Flores, Paulo A. C."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-flores-paulo-a-c-centro-nacional-de-pesquisa-e-conservao-de-mamferos-aquticos-brasil> a foaf:Organization ;
+	foaf:name "Fil: Flores, Paulo A. C.. Centro Nacional de Pesquisa e Conservaçào de Mamíferos Aquáticos; Brasil"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/flores-paulo-a-c> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-flores-paulo-a-c-centro-nacional-de-pesquisa-e-conservao-de-mamferos-aquticos-brasil> .
+
+<http://hdl.handle.net/11336/17363> dblp:authoredBy <http://data.cd.gob.ar/resource/person/flores-paulo-a-c> .
+
+<http://data.cd.gob.ar/resource/person/garcia-nestor-anibal> a foaf:Person ;
+	rdfs:label "Garcia, Nestor Anibal"^^xsd:string ;
+	foaf:name "Garcia, Nestor Anibal"^^xsd:string .
+
+<http://hdl.handle.net/11336/17363> dblp:authoredBy <http://data.cd.gob.ar/resource/person/garcia-nestor-anibal> .
+
+<http://data.cd.gob.ar/resource/person/aguilar-alejandro> a foaf:Person ;
+	rdfs:label "Aguilar, Alejandro"^^xsd:string ;
+	foaf:name "Aguilar, Alejandro"^^xsd:string .
+
+<http://hdl.handle.net/11336/17363> dblp:authoredBy <http://data.cd.gob.ar/resource/person/aguilar-alejandro> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Conservación de la Biodiversidad"^^xsd:string , "Ciencias Biológicas"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "9"^^xsd:integer ;
+	dblp:pageNumbers "1–8"^^xsd:string .
+
+<http://hdl.handle.net/11336/16867> a dblp:Publication ;
+	dc:title "Enhanced polyaromatic hydrocarbon degradation by adapted cultures of actinomycete strains"@en .
+
+<http://data.cd.gob.ar/resource/journal/journal-of-basic-microbiology> a fabio:JournalArticle ;
+	rdfs:label "Journal Of Basic Microbiology"@en ;
+	owl:sameAs <http://www.wikidata.org/entity/Q6294827> ;
+	dbo:country <http://data.cd.gob.ar/resource/country/alemania> .
+
+<http://hdl.handle.net/11336/16867> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/journal-of-basic-microbiology> ;
+	dblp:isbn "0233-111X"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Wiley Vch Verlag"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Tue May 23 16:58:38 ART 2017"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "ACTINOMYCETE"^^xsd:string , "POLYCYCLIC AROMATIC HYDROCARBONS"^^xsd:string , "ENHANCED PAH REMOVAL"^^xsd:string , "CATA GENE"^^xsd:string ;
+	fabio:Abstract "Fifteen actinomycete strains were evaluated for their potential use in removal of polycyclic aromatic hydrocarbons (PAH). Their capability to degrade of naphthalene, phenanthrene, and pyrene was tested in minimal medium (MM) and MM with glucose as another substrate. Degradation of naphthalene in MM was observed in all isolates at different rates, reaching maximumvalues near to 76% in some strains of Streptomyces, Rhodococcus sp. 016 and Amycolatopsis tucumanensis DSM 45259. Maximum values of degradation of phenanthrene in MM occurred in cultures of A. tucumanensis DSM 45259 (36.2%) and Streptomyces sp. A12 (20%), while the degradation of pyrene in MM was poor and only significant with Streptomyces sp. A12 (4.3%). Because of the poor performance when growing on phenanthrene and pyrene alone, Rhodococcus sp. 20, Rhodococcus sp. 016, A. tucumanensis DSM 45259, Streptomyces sp. A2, and Streptomyces sp. A12 were challenged to an adaptation schedule of successive cultures on a fresh solid medium supplemented with PAHs, decreasing concentration of glucose in each step. As a result, an enhanced degradation of PAHs by adapted strains was observed in the presence of glucose as cosubstrate, without degradation of phenanthrene and pyrene inMMwhile an increase to up to 50% of degradation was seen with these strains in glucose amended media. An internal fragment of the catA gene, which codes for catechol 1,2-dioxygenase, was amplified from both Rhodococcus strains, showing the potential for degradation of aromatic compounds via salycilate. These results allow us to propose the usefulness of these actinomycete strains for PAH bioremediation in the environment."@en .
+
+<http://onlinelibrary.wiley.com/doi/10.1002/jobm.201400262/abstract> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/16867> dc:identifier <http://onlinelibrary.wiley.com/doi/10.1002/jobm.201400262/abstract> .
+
+<http://data.cd.gob.ar/resource/person/bourguignon-natalia> a foaf:Person ;
+	rdfs:label "Bourguignon, Natalia"^^xsd:string ;
+	foaf:name "Bourguignon, Natalia"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tucumn-planta-piloto-de-procesos-industriales-microbiolgicos-i-argentina> a foaf:Organization ;
+	foaf:name "Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Tucumán. Planta Piloto de Procesos Industriales Microbiológicos (i); Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/bourguignon-natalia> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tucumn-planta-piloto-de-procesos-industriales-microbiolgicos-i-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0001-6359-7340" .
+
+<http://hdl.handle.net/11336/16867> dblp:authoredBy <http://data.cd.gob.ar/resource/person/bourguignon-natalia> .
+
+<http://data.cd.gob.ar/resource/person/isaac-paula> a foaf:Person ;
+	rdfs:label "Isaac, Paula"^^xsd:string ;
+	foaf:name "Isaac, Paula"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-isaac-paula-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tucumn-planta-piloto-de-procesos-industriales-microbiolgicos-i-argentina-universidad-nacional-de-tucumn-argentina> a foaf:Organization ;
+	foaf:name "Fil: Isaac, Paula. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Tucumán. Planta Piloto de Procesos Industriales Microbiológicos (i); Argentina. Universidad Nacional de Tucumán; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/isaac-paula> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-isaac-paula-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tucumn-planta-piloto-de-procesos-industriales-microbiolgicos-i-argentina-universidad-nacional-de-tucumn-argentina> .
+
+<http://hdl.handle.net/11336/16867> dblp:authoredBy <http://data.cd.gob.ar/resource/person/isaac-paula> .
+
+<http://data.cd.gob.ar/resource/person/alvarez-hector-manuel> a foaf:Person ;
+	rdfs:label "Alvarez, Hector Manuel"^^xsd:string ;
+	foaf:name "Alvarez, Hector Manuel"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-alvarez-hector-manuel-universidad-nacional-de-la-patagonia-san-juan-bosco-facultad-de-ciencias-naturales-sede-comodoro-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> a foaf:Organization ;
+	foaf:name "Fil: Alvarez, Hector Manuel. Universidad Nacional de la Patagonia \"san Juan Bosco\". Facultad de Ciencias Naturales - Sede Comodoro; Argentina. Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/alvarez-hector-manuel> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-alvarez-hector-manuel-universidad-nacional-de-la-patagonia-san-juan-bosco-facultad-de-ciencias-naturales-sede-comodoro-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> .
+
+<http://hdl.handle.net/11336/16867> dblp:authoredBy <http://data.cd.gob.ar/resource/person/alvarez-hector-manuel> .
+
+<http://data.cd.gob.ar/resource/person/amoroso-maria-julia-del-r> a foaf:Person ;
+	rdfs:label "Amoroso, Maria Julia del R."^^xsd:string ;
+	foaf:name "Amoroso, Maria Julia del R."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-amoroso-maria-julia-del-r-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tucumn-planta-piloto-de-procesos-industriales-microbiolgicos-i-argentina-universidad-nacional-de-tucumn-argentina> a foaf:Organization ;
+	foaf:name "Fil: Amoroso, Maria Julia del R.. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Tucumán. Planta Piloto de Procesos Industriales Microbiológicos (i); Argentina. Universidad Nacional de Tucumán; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/amoroso-maria-julia-del-r> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-amoroso-maria-julia-del-r-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tucumn-planta-piloto-de-procesos-industriales-microbiolgicos-i-argentina-universidad-nacional-de-tucumn-argentina> .
+
+<http://hdl.handle.net/11336/16867> dblp:authoredBy <http://data.cd.gob.ar/resource/person/amoroso-maria-julia-del-r> .
+
+<http://data.cd.gob.ar/resource/person/ferrero-marcela-alejandra> a foaf:Person ;
+	rdfs:label "Ferrero, Marcela Alejandra"^^xsd:string ;
+	foaf:name "Ferrero, Marcela Alejandra"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-ferrero-marcela-alejandra-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tucumn-planta-piloto-de-procesos-industriales-microbiolgicos-i-argentina-universidad-nacional-de-tucumn-argentina> a foaf:Organization ;
+	foaf:name "Fil: Ferrero, Marcela Alejandra. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Tucumán. Planta Piloto de Procesos Industriales Microbiológicos (i); Argentina. Universidad Nacional de Tucumán; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/ferrero-marcela-alejandra> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-ferrero-marcela-alejandra-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tucumn-planta-piloto-de-procesos-industriales-microbiolgicos-i-argentina-universidad-nacional-de-tucumn-argentina> .
+
+<http://hdl.handle.net/11336/16867> dblp:authoredBy <http://data.cd.gob.ar/resource/person/ferrero-marcela-alejandra> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Biotecnología Medioambiental"^^xsd:string , "Biotecnología del Medio Ambiente"^^xsd:string , "INGENIERÍAS Y TECNOLOGÍAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "54"^^xsd:integer ;
+	dblp:pageNumbers "1288–1294"^^xsd:string .
+
+<http://hdl.handle.net/11336/6786> a dblp:Publication ;
+	dc:title "Leveraging semantic similarity for folksonomy-based recommendation"@en .
+
+<http://data.cd.gob.ar/resource/journal/ieee-internet-computing> a fabio:JournalArticle ;
+	rdfs:label "IEEE Internet Computing"@en ;
+	owl:sameAs dbr:IEEE_Internet_Computing ;
+	dbo:country <http://data.cd.gob.ar/resource/country/estados-unidos> .
+
+<http://hdl.handle.net/11336/6786> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/ieee-internet-computing> ;
+	dblp:isbn "1089-7801"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Institute of Electrical and Electronics Engineers"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Thu Jul 28 20:33:08 ART 2016"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "SOCIAL TAGGING SYSTEMS"^^xsd:string , "FOLKSONOMIES"^^xsd:string , "SIMILARITY MEASURES"^^xsd:string , "RECOMMENDER SYSTEMS"^^xsd:string ;
+	fabio:Abstract "For recommending interesting resources, such as Web pages or pictures available in social tagging systems, assessing their similarity with user profiles is crucial. Here, we analyze the role of semantic similarity to calculate the resemblance between user profiles and published resources in folksonomies. Experiments carried out with data from two social sites showed that associating semantics to tags results in more accurate similarities among elements in tagging systems and, consequently, enhances recommendations."@en .
+
+<http://dx.doi.org/10.1109/MIC.2013.26> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/6786> dc:identifier <http://dx.doi.org/10.1109/MIC.2013.26> .
+
+<http://data.cd.gob.ar/resource/person/godoy-daniela-lis> a foaf:Person ;
+	rdfs:label "Godoy, Daniela Lis"^^xsd:string ;
+	foaf:name "Godoy, Daniela Lis"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tandil-instituto-superior-de-ingenieria-del-software-argentina> a foaf:Organization ;
+	foaf:name "Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Tandil. Instituto Superior de Ingenieria del Software; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/godoy-daniela-lis> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-tandil-instituto-superior-de-ingenieria-del-software-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0002-8862-8809" .
+
+<http://hdl.handle.net/11336/6786> dblp:authoredBy <http://data.cd.gob.ar/resource/person/godoy-daniela-lis> .
+
+<http://data.cd.gob.ar/resource/person/rodriguez-gustavo> a foaf:Person ;
+	rdfs:label "Rodriguez, Gustavo"^^xsd:string ;
+	foaf:name "Rodriguez, Gustavo"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-rodriguez-gustavo-universidad-nacional-del-centro-de-la-provincia-de-buenos-aires-argentina> a foaf:Organization ;
+	foaf:name "Fil: Rodriguez, Gustavo. Universidad Nacional del Centro de la Provincia de Buenos Aires; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/rodriguez-gustavo> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-rodriguez-gustavo-universidad-nacional-del-centro-de-la-provincia-de-buenos-aires-argentina> ;
+	owl:sameAs "https://orcid.org/0000-0002-1377-8589" .
+
+<http://hdl.handle.net/11336/6786> dblp:authoredBy <http://data.cd.gob.ar/resource/person/rodriguez-gustavo> .
+
+<http://data.cd.gob.ar/resource/person/scavuzzo-franco> a foaf:Person ;
+	rdfs:label "Scavuzzo, Franco"^^xsd:string ;
+	foaf:name "Scavuzzo, Franco"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-scavuzzo-franco-universidad-nacional-del-centro-de-la-provincia-de-buenos-aires-argentina> a foaf:Organization ;
+	foaf:name "Fil: Scavuzzo, Franco. Universidad Nacional del Centro de la Provincia de Buenos Aires; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/scavuzzo-franco> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-scavuzzo-franco-universidad-nacional-del-centro-de-la-provincia-de-buenos-aires-argentina> .
+
+<http://hdl.handle.net/11336/6786> dblp:authoredBy <http://data.cd.gob.ar/resource/person/scavuzzo-franco> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Ciencias de la Computación"^^xsd:string , "Ciencias de la Computación e Información"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "18"^^xsd:integer ;
+	dblp:pageNumbers "48-55"^^xsd:string .
+
+<http://hdl.handle.net/11336/36789> a dblp:Publication ;
+	dc:title "Free-living marine nematodes from San Antonio Bay (Río Negro, Argentina)"@en ;
+	dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/zookeys> ;
+	dblp:isbn "1313-2970"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Pensoft Publishers"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Mon Feb 19 21:08:11 ART 2018"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "CHROMADOREA"^^xsd:string , "ENOPLEA"^^xsd:string , "NEMATODA"^^xsd:string , "SOUTH ATLANTIC"^^xsd:string ;
+	fabio:Abstract "The dataset of free-living marine nematodes of San Antonio Bay is based on sediment samples collected in February 2009 during doctoral theses funded by CONICET grants. A total of 36 samples has been taken at three locations in the San Antonio Bay, Santa Cruz Province, Argentina on the coastal littoral at three tidal levels. This presents a unique and important collection for benthic biodiversity assessment of Patagonian nematodes as this area remains one of the least known regions. In total 7,743 specimens of free-living marine nematodes belonging to two classes, eight orders, 37 families, 94 genera and 104 species were collected."@en .
+
+<https://zookeys.pensoft.net/articles.php?id=7222> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/36789> dc:identifier <https://zookeys.pensoft.net/articles.php?id=7222> .
+
+<http://data.cd.gob.ar/resource/person/villares-maria-gabriela> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-nacional-patagnico-argentina> .
+
+<http://hdl.handle.net/11336/36789> dblp:authoredBy <http://data.cd.gob.ar/resource/person/villares-maria-gabriela> .
+
+<http://data.cd.gob.ar/resource/organization/fil-lo-russo-virginia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-instituto-de-diversidad-y-evolucin-austral-argentina> a foaf:Organization ;
+	foaf:name "Fil: Lo Russo, Virginia. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Centro Nacional Patagónico. Instituto de Diversidad y Evolución Austral; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/lo-russo-virginia> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-lo-russo-virginia-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-instituto-de-diversidad-y-evolucin-austral-argentina> .
+
+<http://hdl.handle.net/11336/36789> dblp:authoredBy <http://data.cd.gob.ar/resource/person/lo-russo-virginia> .
+
+<http://data.cd.gob.ar/resource/organization/fil-pastor-catalina-teresa-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-instituto-de-diversidad-y-evolucin-austral-argentina> a foaf:Organization ;
+	foaf:name "Fil: Pastor, Catalina Teresa. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Centro Nacional Patagónico. Instituto de Diversidad y Evolución Austral; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/pastor-catalina-teresa> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-pastor-catalina-teresa-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-centro-nacional-patagnico-instituto-de-diversidad-y-evolucin-austral-argentina> .
+
+<http://hdl.handle.net/11336/36789> dblp:authoredBy <http://data.cd.gob.ar/resource/person/pastor-catalina-teresa> , <http://data.cd.gob.ar/resource/person/milano-viviana> , <http://data.cd.gob.ar/resource/person/miyashiro-lidia> , <http://data.cd.gob.ar/resource/person/mazzanti-renato> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Otras Ciencias Biológicas"^^xsd:string , "Ciencias Biológicas"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "2016"^^xsd:integer ;
+	dblp:pageNumbers "43-55"^^xsd:string .
+
+<http://hdl.handle.net/11336/31530> a dblp:Publication ;
+	dc:title "Nonlinear optimization for a tumor invasion PDE model"@en .
+
+<http://data.cd.gob.ar/resource/journal/computational-and-applied-mathematics> a fabio:JournalArticle ;
+	rdfs:label "Computational And Applied Mathematics"@en ;
+	owl:sameAs <http://www.wikidata.org/entity/Q15757790> ;
+	dbo:country <http://data.cd.gob.ar/resource/country/alemania> .
+
+<http://hdl.handle.net/11336/31530> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/computational-and-applied-mathematics> ;
+	dblp:isbn "0101-8205"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Springer"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Tue Dec 26 17:13:03 ART 2017"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "REACTION DIFFUSION EQUATION"^^xsd:string , "TUMOR INVASION"^^xsd:string , "PDE-CONSTRAINED OPTIMIZATION"^^xsd:string , "ADJOINT METHOD"^^xsd:string ;
+	fabio:Abstract "In this work, we introduce a methodology to approximate unknown parameters that appear on a non-linear reaction–diffusion model of tumor invasion. These equations consider that tumor-induced alteration of micro-environmental pH furnishes a mechanism for cancer invasion. A coupled system reaction–diffusion explaining this model is given by three partial differential equations for the non-dimensional spatial distribution and temporal evolution of the density of normal tissue, the neoplastic tissue growth and the excess concentration of H ++ ions. The tumor model parameters have a corresponding biological meaning: the reabsorption rate, the destructive influence of H ++ ions in the healthy tissue, the growth rate of tumor tissue and the diffusion coefficient. We propose to solve the direct problem using the Finite Element Method (FEM) and minimize an appropriate functional including both the real data (obtained via in-vitro experiments and fluorescence ratio imaging microscopy) and the numerical solution. The gradient of the functional is computed by the adjoint method."@en .
+
+<http://dx.doi.org/10.1007/s40314-016-0356-2> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/31530> dc:identifier <http://dx.doi.org/10.1007/s40314-016-0356-2> .
+
+<http://data.cd.gob.ar/resource/person/quiroga-andrs-agustin-ignacio> a foaf:Person ;
+	rdfs:label "Quiroga, Andrés Agustin Ignacio"^^xsd:string ;
+	foaf:name "Quiroga, Andrés Agustin Ignacio"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/comision-nacional-de-energia-atomica-gerencia-de-area-de-aplicaciones-de-la-tecnologa-nuclear-gerencia-de-investigacin-aplicada-grupo-de-mecanica-computacional-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> a foaf:Organization ;
+	foaf:name "Comision Nacional de Energia Atomica. Gerencia de Area de Aplicaciones de la Tecnología Nuclear. Gerencia de Investigación Aplicada. Grupo de Mecanica Computacional; Argentina. Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/quiroga-andrs-agustin-ignacio> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/comision-nacional-de-energia-atomica-gerencia-de-area-de-aplicaciones-de-la-tecnologa-nuclear-gerencia-de-investigacin-aplicada-grupo-de-mecanica-computacional-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> .
+
+<http://hdl.handle.net/11336/31530> dblp:authoredBy <http://data.cd.gob.ar/resource/person/quiroga-andrs-agustin-ignacio> .
+
+<http://data.cd.gob.ar/resource/person/torres-german-ariel> a foaf:Person ;
+	rdfs:label "Torres, German Ariel"^^xsd:string ;
+	foaf:name "Torres, German Ariel"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-torres-german-ariel-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-nordeste-instituto-de-modelado-e-innovacin-tecnolgica-universidad-nacional-del-nordeste-facultad-de-ciencias-exactas-naturales-y-agrimensura-instituto-de-modelado-e-innovacin-tecnolgica-argentina> a foaf:Organization ;
+	foaf:name "Fil: Torres, German Ariel. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Nordeste. Instituto de Modelado e Innovación Tecnológica. Universidad Nacional del Nordeste. Facultad de Ciencias Exactas Naturales y Agrimensura. Instituto de Modelado e Innovación Tecnológica; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/torres-german-ariel> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-torres-german-ariel-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-nordeste-instituto-de-modelado-e-innovacin-tecnolgica-universidad-nacional-del-nordeste-facultad-de-ciencias-exactas-naturales-y-agrimensura-instituto-de-modelado-e-innovacin-tecnolgica-argentina> .
+
+<http://hdl.handle.net/11336/31530> dblp:authoredBy <http://data.cd.gob.ar/resource/person/torres-german-ariel> .
+
+<http://data.cd.gob.ar/resource/person/fernndez-ferreyra-damin-roberto> a foaf:Person ;
+	rdfs:label "Fernández Ferreyra, Damián Roberto"^^xsd:string ;
+	foaf:name "Fernández Ferreyra, Damián Roberto"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-fernndez-ferreyra-damin-roberto-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-crdoba-centro-de-investigacin-y-estudios-de-matemtica-universidad-nacional-de-crdoba-centro-de-investigacin-y-estudios-de-matemtica-argentina-universidad-nacional-de-crdoba-facultad-de-matemtica-astronoma-y-fsica-argentina> a foaf:Organization ;
+	foaf:name "Fil: Fernández Ferreyra, Damián Roberto. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Córdoba. Centro de Investigación y Estudios de Matemática. Universidad Nacional de Córdoba. Centro de Investigación y Estudios de Matemática; Argentina. Universidad Nacional de Córdoba. Facultad de Matemática, Astronomía y Física; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/fernndez-ferreyra-damin-roberto> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-fernndez-ferreyra-damin-roberto-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-crdoba-centro-de-investigacin-y-estudios-de-matemtica-universidad-nacional-de-crdoba-centro-de-investigacin-y-estudios-de-matemtica-argentina-universidad-nacional-de-crdoba-facultad-de-matemtica-astronoma-y-fsica-argentina> .
+
+<http://hdl.handle.net/11336/31530> dblp:authoredBy <http://data.cd.gob.ar/resource/person/fernndez-ferreyra-damin-roberto> .
+
+<http://data.cd.gob.ar/resource/person/turner-cristina-vilma> a foaf:Person ;
+	rdfs:label "Turner, Cristina Vilma"^^xsd:string ;
+	foaf:name "Turner, Cristina Vilma"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-turner-cristina-vilma-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-crdoba-centro-de-investigacin-y-estudios-de-matemtica-universidad-nacional-de-crdoba-centro-de-investigacin-y-estudios-de-matemtica-argentina-universidad-nacional-de-crdoba-facultad-de-matemtica-astronoma-y-fsica-argentina> a foaf:Organization ;
+	foaf:name "Fil: Turner, Cristina Vilma. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - Córdoba. Centro de Investigación y Estudios de Matemática. Universidad Nacional de Córdoba. Centro de Investigación y Estudios de Matemática; Argentina. Universidad Nacional de Córdoba. Facultad de Matemática, Astronomía y Física; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/turner-cristina-vilma> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-turner-cristina-vilma-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-crdoba-centro-de-investigacin-y-estudios-de-matemtica-universidad-nacional-de-crdoba-centro-de-investigacin-y-estudios-de-matemtica-argentina-universidad-nacional-de-crdoba-facultad-de-matemtica-astronoma-y-fsica-argentina> .
+
+<http://hdl.handle.net/11336/31530> dblp:authoredBy <http://data.cd.gob.ar/resource/person/turner-cristina-vilma> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Matemática Pura"^^xsd:string , "Matemáticas"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:pageNumbers "41-59"^^xsd:string .
+
+<http://hdl.handle.net/11336/6965> a dblp:Publication ;
+	dc:title "Towards ontology evaluation across the life cycle"@en .
+
+<http://data.cd.gob.ar/resource/journal/applied-ontology> a fabio:JournalArticle ;
+	rdfs:label "Applied Ontology"@en ;
+	owl:sameAs <http://www.wikidata.org/entity/Q15745251> ;
+	dbo:country <http://data.cd.gob.ar/resource/country/estados-unidos> .
+
+<http://hdl.handle.net/11336/6965> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/applied-ontology> ;
+	dblp:isbn "1875-8533"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Ios Press"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Fri Aug 05 18:43:11 ART 2016"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "Ontology evaluation"^^xsd:string , "ontology lifecycle"^^xsd:string , "best practices"^^xsd:string ;
+	fabio:Abstract "Currently, there is no agreed on methodology for development of ontologies, and there is no consensus on how ontologies should be evaluated. Consequently, evaluation techniques and tools are not widely utilized in the development of ontologies. This can lead to ontologies of poor quality and is an obstacle to the successful deployment of ontologies as a technology.Currently, there is no agreed on methodology for development of ontologies, and there is no consensus on how ontologies should be evaluated. Consequently, evaluation techniques and tools are not widely utilized in the development of ontologies. This can lead to ontologies of poor quality and is an obstacle to the successful deployment of ontologies as a technology. This document focuses on the evaluation of five aspects of the quality of ontologies: intelligibility, fidelity, craftsmanship, fitness, and deployability. A model for the ontology life cycle is presented, and evaluation criteria are presented in the context of the phases of the life cycle. We discuss the availability of tools and the document ends with observations and recommendations. Given the current level of maturity of ontology as an engineering discipline, any results on how to best build and evaluate ontologies have to be considered as preliminary. However, the results achieved a broad consensus across the range of backgrounds, application foci, specialties and experience found in the Ontology Summit community."@en .
+
+<http://dx.doi.org/10.3233/AO-130125> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/6965> dc:identifier <http://dx.doi.org/10.3233/AO-130125> .
+
+<http://data.cd.gob.ar/resource/person/neuhaus-fabian> a foaf:Person ;
+	rdfs:label "Neuhaus, Fabian"^^xsd:string ;
+	foaf:name "Neuhaus, Fabian"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-neuhaus-fabian> a foaf:Organization ;
+	foaf:name "Fil: Neuhaus, Fabian."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/neuhaus-fabian> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-neuhaus-fabian> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/neuhaus-fabian> .
+
+<http://data.cd.gob.ar/resource/person/vizedom-amanda> a foaf:Person ;
+	rdfs:label "Vizedom, Amanda"^^xsd:string ;
+	foaf:name "Vizedom, Amanda"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-vizedom-amanda> a foaf:Organization ;
+	foaf:name "Fil: Vizedom, Amanda."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/vizedom-amanda> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-vizedom-amanda> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/vizedom-amanda> .
+
+<http://data.cd.gob.ar/resource/person/baclawski-ken> a foaf:Person ;
+	rdfs:label "Baclawski, Ken"^^xsd:string ;
+	foaf:name "Baclawski, Ken"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-baclawski-ken> a foaf:Organization ;
+	foaf:name "Fil: Baclawski, Ken."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/baclawski-ken> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-baclawski-ken> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/baclawski-ken> .
+
+<http://data.cd.gob.ar/resource/person/bennett-mike> a foaf:Person ;
+	rdfs:label "Bennett, Mike"^^xsd:string ;
+	foaf:name "Bennett, Mike"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-bennett-mike> a foaf:Organization ;
+	foaf:name "Fil: Bennett, Mike."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/bennett-mike> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-bennett-mike> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/bennett-mike> .
+
+<http://data.cd.gob.ar/resource/person/denny-michael> a foaf:Person ;
+	rdfs:label "Denny, Michael"^^xsd:string ;
+	foaf:name "Denny, Michael"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-denny-michael> a foaf:Organization ;
+	foaf:name "Fil: Denny, Michael."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/denny-michael> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-denny-michael> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/denny-michael> .
+
+<http://data.cd.gob.ar/resource/person/grninger-michael> a foaf:Person ;
+	rdfs:label "Grüninger, Michael"^^xsd:string ;
+	foaf:name "Grüninger, Michael"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-grninger-michael> a foaf:Organization ;
+	foaf:name "Fil: Grüninger, Michael."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/grninger-michael> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-grninger-michael> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/grninger-michael> .
+
+<http://data.cd.gob.ar/resource/person/hashemi-ali> a foaf:Person ;
+	rdfs:label "Hashemi, Ali"^^xsd:string ;
+	foaf:name "Hashemi, Ali"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-hashemi-ali> a foaf:Organization ;
+	foaf:name "Fil: Hashemi, Ali."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/hashemi-ali> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-hashemi-ali> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/hashemi-ali> .
+
+<http://data.cd.gob.ar/resource/person/longstreth-terry> a foaf:Person ;
+	rdfs:label "Longstreth, Terry"^^xsd:string ;
+	foaf:name "Longstreth, Terry"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-longstreth-terry> a foaf:Organization ;
+	foaf:name "Fil: Longstreth, Terry."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/longstreth-terry> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-longstreth-terry> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/longstreth-terry> .
+
+<http://data.cd.gob.ar/resource/person/obrst-leo> a foaf:Person ;
+	rdfs:label "Obrst, Leo"^^xsd:string ;
+	foaf:name "Obrst, Leo"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-obrst-leo> a foaf:Organization ;
+	foaf:name "Fil: Obrst, Leo."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/obrst-leo> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-obrst-leo> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/obrst-leo> .
+
+<http://data.cd.gob.ar/resource/person/ray-steve> a foaf:Person ;
+	rdfs:label "Ray, Steve"^^xsd:string ;
+	foaf:name "Ray, Steve"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-ray-steve> a foaf:Organization ;
+	foaf:name "Fil: Ray, Steve."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/ray-steve> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-ray-steve> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/ray-steve> .
+
+<http://data.cd.gob.ar/resource/person/sriram-ram> a foaf:Person ;
+	rdfs:label "Sriram, Ram"^^xsd:string ;
+	foaf:name "Sriram, Ram"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-sriram-ram> a foaf:Organization ;
+	foaf:name "Fil: Sriram, Ram."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/sriram-ram> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-sriram-ram> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/sriram-ram> .
+
+<http://data.cd.gob.ar/resource/person/schneider-todd> a foaf:Person ;
+	rdfs:label "Schneider, Todd"^^xsd:string ;
+	foaf:name "Schneider, Todd"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-schneider-todd> a foaf:Organization ;
+	foaf:name "Fil: Schneider, Todd."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/schneider-todd> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-schneider-todd> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/schneider-todd> .
+
+<http://data.cd.gob.ar/resource/person/vegetti-maria-marcela> a foaf:Person ;
+	rdfs:label "Vegetti, Maria Marcela"^^xsd:string ;
+	foaf:name "Vegetti, Maria Marcela"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-vegetti-maria-marcela> a foaf:Organization ;
+	foaf:name "Fil: Vegetti, Maria Marcela."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/vegetti-maria-marcela> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-vegetti-maria-marcela> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/vegetti-maria-marcela> .
+
+<http://data.cd.gob.ar/resource/person/west-matthew> a foaf:Person ;
+	rdfs:label "West, Matthew"^^xsd:string ;
+	foaf:name "West, Matthew"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-west-matthew> a foaf:Organization ;
+	foaf:name "Fil: West, Matthew."^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/west-matthew> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-west-matthew> .
+
+<http://hdl.handle.net/11336/6965> dblp:authoredBy <http://data.cd.gob.ar/resource/person/west-matthew> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Otras Ingenierías y Tecnologías"^^xsd:string , "INGENIERÍAS Y TECNOLOGÍAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "8"^^xsd:integer ;
+	dblp:pageNumbers "179-194"^^xsd:string .
+
+<http://hdl.handle.net/11336/27307> a dblp:Publication ;
+	dc:title "Artifacts, agents and intentions: towards a reflexive ontology of technical objects"@en .
+
+<http://data.cd.gob.ar/resource/journal/ludus-vitalis> a fabio:JournalArticle ;
+	rdfs:label "Ludus Vitalis"@en .
+
+<http://data.cd.gob.ar/resource/country/mxico> a dbo:country ;
+	owl:sameAs "https://www.wikidata.org/wiki/Q96" .
+
+<http://data.cd.gob.ar/resource/journal/ludus-vitalis> dbo:country <http://data.cd.gob.ar/resource/country/mxico> .
+
+<http://hdl.handle.net/11336/27307> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/ludus-vitalis> ;
+	dblp:isbn "1133-5165"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Universidad Autónoma Metropolitana-Iztapalapa"^^xsd:string ;
+	dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Wed Nov 01 15:08:10 ART 2017"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "Technical artifact"^^xsd:string , "Normativity"^^xsd:string , "Intention"^^xsd:string , "Reflexive ontology"^^xsd:string ;
+	fabio:Abstract "A central issue in the contemporary debate in analytical metaphysics is the plausibility of the ontological inclusion of ordinary objects, especially artifacts. This paper explores the realist ontologies that include “intentional creations” such as artifacts in their programs, giving rise to a normative view of the world. It approaches the assumptions of two possible realist ontologies implied in the contemporary debate on artifacts. First, it makes a distinction between a reflexive and a non-reflexive ontology, stressing the hermeneutical stance of the former. Second, it focuses on the reflexive nature of the ontology being reconstructed. Third, it discusses its realist character, rejecting the objections that warn against the idealist implications of such a view."@en .
+
+<http://data.cd.gob.ar/resource/person/crelier-pablo-andres> a foaf:Person ;
+	rdfs:label "Crelier, Pablo Andres"^^xsd:string ;
+	foaf:name "Crelier, Pablo Andres"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/universidad-nacional-de-mar-del-plata-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> a foaf:Organization ;
+	foaf:name "Universidad Nacional de Mar del Plata; Argentina. Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/crelier-pablo-andres> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/universidad-nacional-de-mar-del-plata-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> .
+
+<http://hdl.handle.net/11336/27307> dblp:authoredBy <http://data.cd.gob.ar/resource/person/crelier-pablo-andres> .
+
+<http://data.cd.gob.ar/resource/person/parente-diego-carlos> a foaf:Person ;
+	rdfs:label "Parente, Diego Carlos"^^xsd:string ;
+	foaf:name "Parente, Diego Carlos"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/fil-parente-diego-carlos-universidad-nacional-de-mar-del-plata-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> a foaf:Organization ;
+	foaf:name "Fil: Parente, Diego Carlos. Universidad Nacional de Mar del Plata; Argentina. Consejo Nacional de Investigaciones Científicas y Técnicas; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/parente-diego-carlos> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/fil-parente-diego-carlos-universidad-nacional-de-mar-del-plata-argentina-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-argentina> .
+
+<http://hdl.handle.net/11336/27307> dblp:authoredBy <http://data.cd.gob.ar/resource/person/parente-diego-carlos> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Teología"^^xsd:string , "Filosofía, Ética y Religión"^^xsd:string , "HUMANIDADES"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "XXI"^^xsd:integer ;
+	dblp:pageNumbers "47-68"^^xsd:string .
+
+<http://hdl.handle.net/11336/26279> a dblp:Publication ;
+	dc:title "On the Ontology of Spacetime: Substantivalism, Relationism, Eternalism, and Emergence"@en .
+
+<http://data.cd.gob.ar/resource/journal/foundations-of-science> a fabio:JournalArticle ;
+	rdfs:label "Foundations of Science"@en ;
+	owl:sameAs <http://www.wikidata.org/entity/Q5474571> ;
+	dbo:country <http://data.cd.gob.ar/resource/country/alemania> .
+
+<http://hdl.handle.net/11336/26279> dblp:publishedInJournal <http://data.cd.gob.ar/resource/journal/foundations-of-science> ;
+	dblp:isbn "1233-1821"^^xsd:string ;
+	dblp:publicationType "info:eu-repo/semantics/article"^^xsd:string ;
+	dc:publisher "Springer"^^xsd:string .
+
+<https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> rdfs:label "info:eu-repo/semantics/embargoedAccess"^^xsd:string .
+
+<http://hdl.handle.net/11336/26279> dc:rights <https://creativecommons.org/licenses/by-nc-sa/2.5/ar/> ;
+	dc:date "Mon Oct 09 20:24:40 ART 2017"^^xsd:datetime ;
+	dc:language "eng"^^xsd:string ;
+	dc:subject "Ontology"^^xsd:string , "Spacetime"^^xsd:string ;
+	fabio:Abstract "I present a discussion of some issues in the ontology of spacetime. After a characterisation of the controversies among relationists, substantivalists, eternalists, and presentists, I offer a new argument for rejecting presentism, the doctrine that only present objects exist. Then, I outline and defend a form of spacetime realism that I call event substantivalism. I propose an ontological theory for the emergence of spacetime from more basic entities (timeless and spaceless ?events?). Finally, I argue that a relational theory of pre-geometric entities can give rise to substantival spacetime in such a way that relationism and substantivalism are not necessarily opposed positions, but rather complementary. In an appendix I give axiomatic formulations of my ontological views."@en .
+
+<http://dx.doi.org/10.1007/s10699-015-9476-1> a rdfs:Resource .
+
+<http://hdl.handle.net/11336/26279> dc:identifier <http://dx.doi.org/10.1007/s10699-015-9476-1> .
+
+<http://data.cd.gob.ar/resource/person/romero-gustavo-esteban> a foaf:Person ;
+	rdfs:label "Romero, Gustavo Esteban"^^xsd:string ;
+	foaf:name "Romero, Gustavo Esteban"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/organization/provincia-de-buenos-aires-gobernacin-comisin-de-investigaciones-cientficas-instituto-argentino-de-radioastronoma-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-la-plata-instituto-argentino-de-radioastronoma-argentina> a foaf:Organization ;
+	foaf:name "Provincia de Buenos Aires. Gobernación. Comisión de Investigaciones Científicas. Instituto Argentino de Radioastronomía. Consejo Nacional de Investigaciones Científicas y Técnicas. Centro Científico Tecnológico Conicet - La Plata. Instituto Argentino de Radioastronomía; Argentina"^^xsd:string .
+
+<http://data.cd.gob.ar/resource/person/romero-gustavo-esteban> pro:relatesToOrganization <http://data.cd.gob.ar/resource/organization/provincia-de-buenos-aires-gobernacin-comisin-de-investigaciones-cientficas-instituto-argentino-de-radioastronoma-consejo-nacional-de-investigaciones-cientficas-y-tcnicas-centro-cientfico-tecnolgico-conicet-la-plata-instituto-argentino-de-radioastronoma-argentina> .
+
+<http://hdl.handle.net/11336/26279> dblp:authoredBy <http://data.cd.gob.ar/resource/person/romero-gustavo-esteban> ;
+	dc:isPartOf <http://data.cd.gob.ar/resource/dataset/conicet-digital> ;
+	foaf:topic "Otras Ciencias Físicas"^^xsd:string , "Ciencias Físicas"^^xsd:string , "CIENCIAS NATURALES Y EXACTAS"^^xsd:string ;
+	dc:format "application/pdf"^^xsd:string ;
+	dblp:publishedInJournalVolume "22"^^xsd:integer ;
+	dblp:pageNumbers "141-159"^^xsd:string .
