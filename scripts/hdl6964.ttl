@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:void="http://rdfs.org/ns/void#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:fabio="http://purl.org/spar/fabio#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:conicet="http://data.cd.gob.ar/resource/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dblp="http://dblp.org/rdf/schema-2017-04-18#"
+	xmlns:pro="http://purl.org/spar/pro/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<rdf:type rdf:resource="http://dblp.org/rdf/schema-2017-04-18#Publication"/>
+	<dc:title xml:lang="en">Semantic Web and Big Data meets Applied Ontology</dc:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/journal/applied-ontology">
+	<rdf:type rdf:resource="http://purl.org/spar/fabio#JournalArticle"/>
+	<rdfs:label xml:lang="en">Applied Ontology</rdfs:label>
+	<dblp:publishedInJournalVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</dblp:publishedInJournalVolume>
+	<dblp:pageNumbers rdf:datatype="http://www.w3.org/2001/XMLSchema#string">155-170</dblp:pageNumbers>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:publishedInJournal rdf:resource="http://data.cd.gob.ar/resource/journal/applied-ontology"/>
+	<dblp:isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1570-5838</dblp:isbn>
+	<dblp:publicationType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info:eu-repo/semantics/article</dblp:publicationType>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IOS Press</dc:publisher>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info:eu-repo/semantics/restrictedAccess</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dc:rights rdf:resource="https://creativecommons.org/licenses/by-nc-sa/2.5/ar/"/>
+	<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2016-08-05T18:29:34Z</dc:date>
+	<dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</dc:language>
+	<dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applied ontology</dc:subject>
+	<dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semantic Web</dc:subject>
+	<dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linked Data</dc:subject>
+	<dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big Data Ontology Community Collaboration</dc:subject>
+	<fabio:Abstract xml:lang="en">The role that ontologies play or can play in designing and employing semantic technologies has been widely acknowledged by the Semantic Web and Linked Data communities. But the level of collaboration between these communities and the Applied Ontology community has been much less than expected. And ontologies and ontological techniques appear to be of marginal use in Big Data and its applications. To understand this situation and foster greater collaboration, Ontology Summit 2014 brought together representatives from the Semantic Web, Linked Data, Big Data and Applied Ontology communities, to address three basic problems involving applied ontology and these communities: (1) The role of ontologies [in these communities], (2) Current uses of ontologies in these communities, and (3) Engineering of ontologies and semantic integration. The intent was to identify and understand: (a) causes and challenges (e.g. scalability) that hinder reuse of ontologies in SW and LD, (b) solutions that can reduce the differences between ontologies on and off line, and (c) solutions to overcome engineering bottlenecks in current Semantic Web and Big Data applications. Over the past four months, presentations from, and discussions with, representatives of the Semantic Web, Linked Data, and Applied Ontology communities have taken place across four tracks. Each Track focused on different aspects of this year?s Summit topic: (Track A) Investigation of sharable and reusable ontologies; (Track B) Tools, services and techniques for a comprehensive and effective use of ontologies; (Track C) Investigation of the engineering bottlenecks and the ways to prevent and overcome them; (Track D) Enquiry on the variety problem in Big Data. In addition to the four Tracks? activities there was a Hackathon. Six different Hackathon projects took place, all available at their individual project public repositories. An online Community Library and an online Ontology Repository have been created as freely accessible Community resources. This Ontology Summit 2014 Communique presents a summary of the results, original in its attempt both to merge different communities? discourses and to achieve consensus across the Summit participants with respect to open problems and recommendations to address them.</fabio:Abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dx.doi.org/10.3233/AO-140135">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dc:identifier rdf:resource="http://dx.doi.org/10.3233/AO-140135"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/obrst-leo">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obrst, Leo</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obrst, Leo</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/the-mitre-corporation-estados-unidos">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The MITRE Corporation; Estados Unidos</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/obrst-leo">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/the-mitre-corporation-estados-unidos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/obrst-leo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/gruninger-michael">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gruninger, Michael</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gruninger, Michael</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/university-of-toronto-canad">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University Of Toronto; Canadá</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/gruninger-michael">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/university-of-toronto-canad"/>
+	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q15429296"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/gruninger-michael"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/baclawski-ken">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baclawski, Ken</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baclawski, Ken</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/northeastern-university-estados-unidos">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Northeastern University; Estados Unidos</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/baclawski-ken">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/northeastern-university-estados-unidos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/baclawski-ken"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/bennett-mike">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bennett, Mike</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bennett, Mike</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/fil-bennett-mike-hypercube-ltd-reino-unido">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fil: Bennett, Mike. Hypercube Ltd.; Reino Unido</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/bennett-mike">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/fil-bennett-mike-hypercube-ltd-reino-unido"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/bennett-mike"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/brickley-dan">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brickley, Dan</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brickley, Dan</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/google-reino-unido">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google; Reino Unido</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/brickley-dan">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/google-reino-unido"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/brickley-dan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/berg-cross-gary">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berg Cross, Gary</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berg Cross, Gary</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/knowledge-strategies-estados-unidos">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge Strategies; Estados Unidos</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/berg-cross-gary">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/knowledge-strategies-estados-unidos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/berg-cross-gary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/hitzler-pascal">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hitzler, Pascal</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hitzler, Pascal</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/wright-state-university-estados-unidos">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wright State University; Estados Unidos</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/hitzler-pascal">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/wright-state-university-estados-unidos"/>
+	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q30103406"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/hitzler-pascal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/janowicz-krzysztof">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Janowicz, Krzysztof</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Janowicz, Krzysztof</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/university-of-california-estados-unidos">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of California; Estados Unidos</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/janowicz-krzysztof">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/university-of-california-estados-unidos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/janowicz-krzysztof"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/kapp-christine">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kapp, Christine</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kapp, Christine</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/hypercube-ltd-estados-unidos">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypercube Ltd; Estados Unidos</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/kapp-christine">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/hypercube-ltd-estados-unidos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/kapp-christine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/kutz-oliver">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kutz, Oliver</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kutz, Oliver</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/otto-von-guericke-university-magdeburg-alemania">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Otto von Guericke University Magdeburg; Alemania</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/kutz-oliver">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/otto-von-guericke-university-magdeburg-alemania"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/kutz-oliver"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/lange-christoph">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lange, Christoph</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lange, Christoph</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/university-of-bonn-alemania">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Bonn; Alemania</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/lange-christoph">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/university-of-bonn-alemania"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/lange-christoph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/levenchuk-anatoly">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Levenchuk, Anatoly</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Levenchuk, Anatoly</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/techinvestlabru-rusia">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechInvestLab.ru; Rusia</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/levenchuk-anatoly">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/techinvestlabru-rusia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/levenchuk-anatoly"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/quattri-francesca">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quattri, Francesca</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quattri, Francesca</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/the-hong-kong-polytechnic-university-hong-kong">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Hong Kong Polytechnic University; Hong Kong</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/quattri-francesca">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/the-hong-kong-polytechnic-university-hong-kong"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/quattri-francesca"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/rector-alan">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rector, Alan</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rector, Alan</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/university-of-manchester-reino-unido">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University Of Manchester; Reino Unido</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/rector-alan">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/university-of-manchester-reino-unido"/>
+	<owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q4707592"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/rector-alan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/schneider-todd">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schneider, Todd</rdfs:label>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schneider, Todd</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/organization/pds-inc-estados-unidos">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDS, Inc.; Estados Unidos</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/person/schneider-todd">
+	<pro:relatesToOrganization rdf:resource="http://data.cd.gob.ar/resource/organization/pds-inc-estados-unidos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dblp:authoredBy rdf:resource="http://data.cd.gob.ar/resource/person/schneider-todd"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.cd.gob.ar/resource/dataset/conicet-digital">
+	<rdf:type rdf:resource="http://rdfs.org/ns/void#dataset"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://hdl.handle.net/11336/6964">
+	<dc:isPartOf rdf:resource="http://data.cd.gob.ar/resource/dataset/conicet-digital"/>
+	<foaf:topic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Otras Ingenierías y Tecnologías</foaf:topic>
+	<foaf:topic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INGENIERÍAS Y TECNOLOGÍAS</foaf:topic>
+	<dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/pdf</dc:format>
+</rdf:Description>
+
+</rdf:RDF>
